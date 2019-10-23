@@ -6,7 +6,7 @@
     &-list {
         @include flexbox($align: center);
         @include grid($temp-col: 1fr 1fr);
-        @include dim($w: 300px, $h: 60px);
+        width: 300px;
         border: 2px solid $light-black;
         margin: 10px auto;
         padding: 0 10px;
