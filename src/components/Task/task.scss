@@ -1,0 +1,23 @@
+@import '../../utilities/mixins'; 
+@import '../../utilities/variables';
+@import '../../utilities/extends';
+
+.task {
+    &-list {
+        @include flexbox($align: center);
+        @include grid($temp-col: 1fr 1fr);
+        @include dim($w: 300px, $h: 60px);
+        border: 2px solid $light-black;
+        margin: 10px auto;
+        padding: 0 10px;
+        &-heading {
+            text-align: left;
+        }
+        &-icons {
+            @include flexbox($just: flex-end);
+            &-edit {
+                margin: 0 15px;
+            }
+        }
+    } 
+}

@@ -1,0 +1,19 @@
+@import '../../utilities/mixins'; 
+@import '../../utilities/variables';
+@import '../../utilities/extends';
+
+.input {
+    &-box {
+        @extend %input-box-style;
+    }
+    &-btn {
+        @extend %btn-style;
+    }
+    &-btn-edit { 
+        background-color: $purple;
+    }
+    &-btn-add {
+        background-color: $strong-blue;
+    }
+
+}
